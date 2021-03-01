@@ -70,20 +70,28 @@
 		.grid-layout{
 			display: flex;
 			flex-wrap: wrap;
+			padding: var(--separation);
+			/* justify-content: center; */
+			/* align-items: center; */
+			gap: var(--separation);
 		}
 		.grid-element{
 			height: var(--height);
 			/* width: var(--width); */
 			/* min-width: var(--width); */
-			flex: 33%;
+			flex: calc(33% - var(--separation));
+			/* flex: 33%; */
 			transition: 1s;
 			padding: var(--separation);
+			gap: var(--separation);
+			/* margin: -5px; */
 			/* margin: var(--separation); */
-			/* border: var(--separation) solid black; */
+			/* border: var(--separation) solid rebeccapurple; */
 		}
 		.red{
 			background-color: red;
-			flex: 66%;
+			flex: calc(66% - var(--separation));
+			/* flex: 66%; */
 		}
 		.blue{
 			background-color: blue;
