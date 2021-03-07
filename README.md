@@ -9,9 +9,5 @@ const perro = "this is a line of text";
 console.log(perro);
 ```
 
-{% hint style="info" %}
-Another test, just that
-{% endhint %}
-
 This is me asking me why this changes doesn't stick
 
