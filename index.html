@@ -7,12 +7,15 @@
 <body>
 	<h1>This is the super duper test</h1>
 	<h2 class="display-message" id="display-message">This is a test</h2>
+	<h2 class="display-message" id="display-message2">This is a test</h2>
 
 	<script type="text/javascript">
 		console.log('This is the super duper console.log');
 
 		var displayMessage = document.getElementById("display-message");
+		var displayMessage2 = document.getElementById("display-message2");
 		displayMessage.innerText = window.innerWidth;
+		displayMessage2.innerText = window.innerHeight;
 	</script>
 </body>
 </html>
