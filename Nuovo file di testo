@@ -1,0 +1,23 @@
+function denormalize({ primary, related, relatedName, referenceId }) {
+  
+  return primary.map((item) => {
+    const auxItem = { ...item };
+    const primaryKeys = Object.keys(auxItem);
+    const relatedItems = [];
+    
+    related.forEach((obj) => {
+        if (auxItem.id === obj[referenceId]) {
+            relatedItems.push(obj);
+        }
+        
+    });
+    
+    auxItem[relatedName] = relatedItems;
+    return auxItem;
+    
+  });
+  
+  
+}
+
+module.exports = denormalize;
